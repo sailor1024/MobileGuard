@@ -65,7 +65,6 @@ public class VersionUpdateUtils {
 
     
 
-
     public  VersionUpdateUtils(String mVersion,Activity context){
         this.mVersion=mVersion;
         this.context=context;
