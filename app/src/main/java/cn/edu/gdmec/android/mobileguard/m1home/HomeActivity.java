@@ -36,6 +36,7 @@ public class HomeActivity extends AppCompatActivity {
         msharedPreferences = getSharedPreferences("config",MODE_PRIVATE);
         gv_home = (GridView)findViewById(R.id.gv_home);
         gv_home.setAdapter(new HomeAdapter(HomeActivity.this));
+
         gv_home.setOnItemClickListener(new AdapterView.OnItemClickListener(){
 
             @Override
@@ -74,7 +75,8 @@ public class HomeActivity extends AppCompatActivity {
     private void showSetUpPswDialog(){
         final SetupPasswordDialog setUpPasswordDialog = new SetupPasswordDialog(
                 HomeActivity.this );
-        setUpPasswordDialog.setCallBack(new SetupPasswordDialog.MyCallBack() {
+        setUpPasswordDialog.
+                setCallBack(new SetupPasswordDialog.MyCallBack() {
             @Override
             public void ok() {
                 String firstPwsd = setUpPasswordDialog.mFirstPWDET
