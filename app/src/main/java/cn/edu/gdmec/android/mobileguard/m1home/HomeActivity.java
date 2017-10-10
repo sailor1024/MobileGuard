@@ -109,7 +109,7 @@ public class HomeActivity extends AppCompatActivity {
         mInPswdDialog.setCallBack(new InterPasswordDialog.MyCallBack() {
 
             @Override
-            public void comfirm() {
+            public void confirm() {
                 if (TextUtils.isEmpty(mInPswdDialog.getPassword())){
                     Toast.makeText(HomeActivity.this,"密码不能为空!", 0).show();
                 }else if (password.equals(MD5Utils.encode(mInPswdDialog
