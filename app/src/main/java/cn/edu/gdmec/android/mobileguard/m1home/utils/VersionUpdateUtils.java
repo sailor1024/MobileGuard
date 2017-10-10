@@ -61,8 +61,6 @@ public class VersionUpdateUtils {
    };
 
 
-
-
     
 
     public  VersionUpdateUtils(String mVersion,Activity context){
