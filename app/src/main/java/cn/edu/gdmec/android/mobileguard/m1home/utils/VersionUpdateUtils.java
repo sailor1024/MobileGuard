@@ -68,7 +68,6 @@ public class VersionUpdateUtils {
     }
 
 
-
     public void getCloudVersion(){
         try {
             HttpClient httpclient=new DefaultHttpClient();
