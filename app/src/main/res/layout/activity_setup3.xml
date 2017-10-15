@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<<<<<<< HEAD
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:orientation="vertical">
+=======
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+>>>>>>> 2017/10/15 16:25
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -37,14 +43,22 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="55dp"
+<<<<<<< HEAD
             android:layout_margin="15dp"
+=======
+           android:layout_margin="15dp"
+>>>>>>> 2017/10/15 16:25
             android:gravity="center_vertical"
             android:orientation="horizontal">
 
             <EditText
                 android:id="@+id/et_inputphone"
                 android:layout_width="match_parent"
+<<<<<<< HEAD
                 android:layout_height="50dp"
+=======
+                android:layout_height="30dp"
+>>>>>>> 2017/10/15 16:25
                 android:layout_weight="5"
                 android:background="@drawable/coner_white_rec"
                 android:drawableLeft="@drawable/contact_et_left_icon"
@@ -52,6 +66,7 @@
                 android:inputType="phone"
                 android:textColorHint="@color/purple"/>
 
+<<<<<<< HEAD
             <Button
                 android:id="@+id/bt_addcontact"
                 android:layout_width="55dp"
@@ -73,3 +88,27 @@
     </LinearLayout>
 
 </LinearLayout>
+=======
+           <Button
+               android:id="@+id/btn_addcontact"
+               android:layout_width="55dp"
+               android:layout_height="45dp"
+               android:layout_marginLeft="10dp"
+               android:layout_weight="1"
+               android:background="@drawable/add"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_weight="10"
+            android:background="@color/purple"
+            android:gravity="center">
+
+            <include layout="@layout/setup_radiogroup"/>
+
+    </LinearLayout>
+</LinearLayout>
+
+>>>>>>> 2017/10/15 16:25

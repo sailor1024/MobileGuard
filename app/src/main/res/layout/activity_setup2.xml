@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<<<<<<< HEAD
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:orientation="vertical">
@@ -57,14 +58,79 @@
                 android:text="绑定SIM卡后，当再次重启手机时，若SIM卡信息发生变化，手机卫士会自动发送报警短信给安全号码！"
                 android:textColor="@color/purple"
                 android:textScaleX="1.1"/>
+=======
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="100"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="@color/purple">
+
+        <ImageView
+            android:id="@+id/imgv"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/add"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgv"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="SIM卡绑定"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="4"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_vertical|left"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/recomand_icon"/>
+
+        <TextView
+            style="@style/textview16sp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="绑定SIM卡后，当再次重启手机时，若SIM卡信息发生变化，手机卫士会自动发送报警短信给安全号码！"
+            android:textColor="@color/purple"
+            android:textScaleX="1.1"/>
+>>>>>>> 2017/10/15 16:25
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
+<<<<<<< HEAD
             android:layout_gravity="center_vertical"
             android:layout_weight="1"
             android:gravity="center">
+=======
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+>>>>>>> 2017/10/15 16:25
 
             <Button
                 android:id="@+id/btn_bind_sim"
@@ -77,6 +143,7 @@
         </LinearLayout>
     </LinearLayout>
 
+<<<<<<< HEAD
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="55dp"
@@ -88,3 +155,16 @@
     </LinearLayout>
 
 </LinearLayout>
+=======
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_weight="10"
+            android:background="@color/purple"
+            android:layout_gravity="center">
+            <include layout="@layout/setup_radiogroup"/>
+
+</LinearLayout>
+</LinearLayout>
+
+>>>>>>> 2017/10/15 16:25

@@ -2,8 +2,15 @@ package cn.edu.gdmec.android.mobileguard.m2theftguard;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+
+
+<<<<<<< HEAD
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+=======
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+>>>>>>> 2017/10/15 16:25
 import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.Window;
@@ -51,12 +58,20 @@ public abstract class BaseSetUpActivity extends AppCompatActivity {
                 }
                 if ((e2.getRawX()-e1.getRawY())> 200){
                     showPre();
+<<<<<<< HEAD
                     overridePendingTransition(R.anim.pre_in,R.anim.pre_out);
+=======
+                    overridePendingTransition(R.anim.pre_in, R.anim.pre_out);
+>>>>>>> 2017/10/15 16:25
                     return  true;
                 }
                 if ((e1.getRawX()-e2.getRawX())>200){
                     showNext();
+<<<<<<< HEAD
                     overridePendingTransition(R.anim.next_in,R.anim.next_out);
+=======
+                    overridePendingTransition(R.anim.next_in, R.anim.next_out);
+>>>>>>> 2017/10/15 16:25
                     return  true;
                 }
                 return super.onFling(e1,e2,velocityX, velocityY);

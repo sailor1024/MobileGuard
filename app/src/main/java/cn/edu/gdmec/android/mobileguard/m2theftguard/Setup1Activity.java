@@ -1,6 +1,9 @@
 package cn.edu.gdmec.android.mobileguard.m2theftguard;
 
+<<<<<<< HEAD
 import android.support.v7.app.AppCompatActivity;
+=======
+>>>>>>> 2017/10/15 16:25
 import android.os.Bundle;
 import android.widget.RadioButton;
 import android.widget.Toast;

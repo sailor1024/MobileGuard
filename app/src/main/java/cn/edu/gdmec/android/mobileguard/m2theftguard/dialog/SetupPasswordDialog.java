@@ -8,12 +8,10 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
-//import android.widget.TextView;
-
-import java.text.CollationElementIterator;
 
 import cn.edu.gdmec.android.mobileguard.R;
 
+//import android.widget.TextView;
 
 
 public class SetupPasswordDialog extends Dialog implements View.OnClickListener {

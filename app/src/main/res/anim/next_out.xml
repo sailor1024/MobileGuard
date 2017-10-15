@@ -5,5 +5,10 @@
     android:fromYDelta="0"
     android:toYDelta="0"
     android:duration="500"
+<<<<<<< HEAD
     android:repeatCount="0" >
+=======
+    android:repeatCount="0">
+
+>>>>>>> 2017/10/15 16:25
 </translate>

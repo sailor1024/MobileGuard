@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<<<<<<< HEAD
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:background="@android:color/white"
               android:orientation="vertical"
     >
     <include layout="@layout/titlebar"/>
+=======
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/titlebar" />
+>>>>>>> 2017/10/15 16:25
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -22,16 +31,27 @@
         <TextView
             android:id="@+id/tv_safephone"
             style="@style/textview16sp"
+<<<<<<< HEAD
             android:layout_alignParentLeft="true"
             android:layout_centerVertical="true"
             android:layout_marginLeft="15dp"
             android:textColor="@color/purple"/>
+=======
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/purple" />
+>>>>>>> 2017/10/15 16:25
     </RelativeLayout>
 
     <View
         android:layout_width="match_parent"
         android:layout_height="1.0px"
+<<<<<<< HEAD
         android:background="#10000000" />
+=======
+        android:background="#10000000"/>
+>>>>>>> 2017/10/15 16:25
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -82,7 +102,11 @@
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
             android:layout_marginRight="10dp"
+<<<<<<< HEAD
             android:background="@drawable/arrow_right"/>
+=======
+            android:background="@drawable/arrow_right" />
+>>>>>>> 2017/10/15 16:25
     </RelativeLayout>
 
     <View
@@ -96,7 +120,11 @@
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginTop="30dp"
+<<<<<<< HEAD
         android:orientation="vertical">
+=======
+        android:orientation="vertical" >
+>>>>>>> 2017/10/15 16:25
 
         <TextView
             android:layout_width="match_parent"
@@ -105,13 +133,18 @@
             android:gravity="center"
             android:text="短信指令功能简介"
             android:textColor="@android:color/white"
+<<<<<<< HEAD
             android:textSize="16sp" />
+=======
+            android:textSize="16sp"/>
+>>>>>>> 2017/10/15 16:25
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp">
 
+<<<<<<< HEAD
             <TextView
                 style="@style/textview16sp"
                 android:layout_alignParentRight="true"
@@ -129,6 +162,25 @@
                 android:text="播放报警音乐"
                 android:textColor="@color/purple"/>
         </RelativeLayout>
+=======
+        <TextView
+            style="@style/textview16sp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:text="#*alarm*#"
+            android:textColor="@color/purple" />
+
+        <TextView
+            style="@style/textview16sp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+           android:drawableLeft="@drawable/sim_alarm_icon_small"
+            android:drawablePadding="5dp"
+            android:text="音乐报警音乐"
+            android:textColor="@color/purple" />
+    </RelativeLayout>
+>>>>>>> 2017/10/15 16:25
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -140,7 +192,11 @@
                 android:layout_alignParentRight="true"
                 android:layout_marginRight="10dp"
                 android:text="#*location*#"
+<<<<<<< HEAD
                 android:textColor="@color/purple"/>
+=======
+                android:textColor="@color/purple" />
+>>>>>>> 2017/10/15 16:25
 
             <TextView
                 style="@style/textview16sp"
@@ -149,8 +205,13 @@
                 android:layout_marginLeft="10dp"
                 android:drawableLeft="@drawable/location_icon_small"
                 android:drawablePadding="5dp"
+<<<<<<< HEAD
                 android:text="GPS追踪"
                 android:textColor="@color/purple"/>
+=======
+                android:text="CPS追踪"
+                android:textColor="@color/purple" />
+>>>>>>> 2017/10/15 16:25
         </RelativeLayout>
 
         <RelativeLayout
@@ -163,7 +224,11 @@
                 android:layout_alignParentRight="true"
                 android:layout_marginRight="10dp"
                 android:text="#*lockScreen*#"
+<<<<<<< HEAD
                 android:textColor="@color/purple"/>
+=======
+                android:textColor="@color/purple" />
+>>>>>>> 2017/10/15 16:25
 
             <TextView
                 style="@style/textview16sp"
@@ -173,7 +238,11 @@
                 android:drawableLeft="@drawable/lock_screen_icon_small"
                 android:drawablePadding="5dp"
                 android:text="远程锁屏"
+<<<<<<< HEAD
                 android:textColor="@color/purple"/>
+=======
+                android:textColor="@color/purple" />
+>>>>>>> 2017/10/15 16:25
         </RelativeLayout>
 
         <RelativeLayout
@@ -186,7 +255,11 @@
                 android:layout_alignParentRight="true"
                 android:layout_marginRight="10dp"
                 android:text="#*wipedata*#"
+<<<<<<< HEAD
                 android:textColor="@color/purple"/>
+=======
+                android:textColor="@color/purple" />
+>>>>>>> 2017/10/15 16:25
 
             <TextView
                 style="@style/textview16sp"
@@ -196,8 +269,16 @@
                 android:drawableLeft="@drawable/delete_data_small"
                 android:drawablePadding="5dp"
                 android:text="远程删除数据"
+<<<<<<< HEAD
                 android:textColor="@color/purple"/>
         </RelativeLayout>
     </LinearLayout>
 
 </LinearLayout>
+=======
+                android:textColor="@color/purple" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    </LinearLayout>
+>>>>>>> 2017/10/15 16:25

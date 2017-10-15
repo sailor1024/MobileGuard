@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<<<<<<< HEAD
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:orientation="vertical">
+=======
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+>>>>>>> 2017/10/15 16:25
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -29,9 +35,15 @@
                 android:layout_below="@+id/imgv"
                 android:layout_marginTop="20dp"
                 android:gravity="center"
+<<<<<<< HEAD
                 android:text="恭喜 ！ 设置完成"
                 android:textColor="@android:color/white"
                 android:textScaleX="1.1"
+=======
+                android:text="恭喜！设置完成"
+                android:textColor="@android:color/white"
+               android:textScaleX="1.1"
+>>>>>>> 2017/10/15 16:25
                 android:textSize="18sp"/>
         </RelativeLayout>
 
@@ -39,6 +51,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
+<<<<<<< HEAD
             android:background="@android:color/white">
 
             <TextView
@@ -49,6 +62,18 @@
                 android:drawableLeft="@drawable/security_phone"
                 android:drawablePadding="10dp"
                 android:textColorHint="@color/purple"/>
+=======
+            android:background="@color/purple">
+
+            <TextView
+                android:id="@+id/tv_setup_status"
+                style="@style/textview16sp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+               android:drawableLeft="@drawable/security_phone"
+                android:drawablePadding="10dp"
+               android:textColor="@color/purple"/>
+>>>>>>> 2017/10/15 16:25
 
             <ToggleButton
                 android:id="@+id/togglebtn_securityfunction"
@@ -61,6 +86,7 @@
                 android:textOff=""
                 android:textOn=""/>
         </RelativeLayout>
+<<<<<<< HEAD
     </LinearLayout>
 
     <LinearLayout
@@ -74,3 +100,19 @@
     </LinearLayout>
 
 </LinearLayout>
+=======
+     </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+           android:layout_weight="10"
+            android:background="@color/purple"
+            android:gravity="center">
+
+            <include layout="@layout/setup_radiogroup"/>
+
+    </LinearLayout>
+</LinearLayout>
+
+>>>>>>> 2017/10/15 16:25

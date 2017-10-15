@@ -1,20 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<<<<<<< HEAD
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:orientation="vertical">
+=======
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+>>>>>>> 2017/10/15 16:25
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="100"
         android:orientation="vertical">
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> 2017/10/15 16:25
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="160dp"
             android:background="@color/purple">
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2017/10/15 16:25
             <ImageView
                 android:id="@+id/imgv"
                 android:layout_width="80dp"
@@ -33,6 +46,10 @@
                 android:textSize="18sp"/>
         </RelativeLayout>
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2017/10/15 16:25
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -45,9 +62,15 @@
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:gravity="center_vertical"
+<<<<<<< HEAD
                 android:orientation="horizontal"/>
 
             <TextView
+=======
+                android:orientation="horizontal">
+
+                <TextView
+>>>>>>> 2017/10/15 16:25
                 style="@style/textview16sp"
                 android:layout_width="0dp"
                 android:layout_weight="1"
@@ -57,6 +80,7 @@
                 android:text="SIM卡变更报警"
                 android:textColor="@color/purple"/>
 
+<<<<<<< HEAD
             <TextView
                 style="@style/textview16sp"
                 android:layout_width="0dp"
@@ -100,6 +124,50 @@
     </LinearLayout>
 
 
+=======
+                <TextView
+                    style="@style/textview16sp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@drawable/location_icon"
+                    android:gravity="center"
+                    android:text="GPS追踪"
+                    android:textColor="@color/purple"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/textview16sp"
+                    android:layout_width="0dp"
+                     android:layout_weight="1"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@drawable/lock_screen_icon"
+                    android:gravity="center"
+                    android:text="远程锁屏"
+                    android:textColor="@color/purple"/>
+
+                <TextView
+                    style="@style/textview16sp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@drawable/delete_data"
+                    android:gravity="center"
+                    android:text="远程删除数据"
+                    android:textColor="@color/purple"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+>>>>>>> 2017/10/15 16:25
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="55dp"
@@ -109,5 +177,9 @@
 
         <include layout="@layout/setup_radiogroup"/>
     </LinearLayout>
+<<<<<<< HEAD
 
 </LinearLayout>
+=======
+</LinearLayout>
+>>>>>>> 2017/10/15 16:25

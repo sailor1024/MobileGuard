@@ -1,8 +1,13 @@
 package cn.edu.gdmec.android.mobileguard.m2theftguard;
 
 import android.content.Intent;
+<<<<<<< HEAD
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+=======
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+>>>>>>> 2017/10/15 16:25
 
 import cn.edu.gdmec.android.mobileguard.R;
 
