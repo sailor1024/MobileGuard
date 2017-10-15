@@ -131,7 +131,6 @@ public class VersionUpdateUtils {
     }
 
 
-
     private  void  enterHome(){
         handler.sendEmptyMessage(MESSAGE_ENTERHOME);
     }

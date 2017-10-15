@@ -1,7 +1,6 @@
 package cn.edu.gdmec.android.mobileguard.m1home.adapter;
 
 import android.content.Context;
-
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
@@ -50,7 +49,7 @@ public class HomeAdapter extends BaseAdapter {
 
     @Override
     public View getView(int i, View view, ViewGroup viewGroup) {
-        View view1=View.inflate(context,R.layout.item_home,null);
+        View view1=View.inflate(context, R.layout.item_home,null);
         ImageView iv_icon=view1.findViewById(R.id.iv_home);
         TextView tv_name=view1.findViewById(R.id.tv_name);
         iv_icon.setImageResource(imageId[i]);
