@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="100"
         android:orientation="vertical">
-        
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="160dp"
             android:background="@color/purple">
+
             <ImageView
                 android:id="@+id/imgv"
                 android:layout_width="80dp"
@@ -32,7 +33,6 @@
                 android:textSize="18sp"/>
         </RelativeLayout>
 
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -45,9 +45,9 @@
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:gravity="center_vertical"
-                android:orientation="horizontal">
+                android:orientation="horizontal"/>
 
-                <TextView
+            <TextView
                 style="@style/textview16sp"
                 android:layout_width="0dp"
                 android:layout_weight="1"
@@ -57,47 +57,48 @@
                 android:text="SIM卡变更报警"
                 android:textColor="@color/purple"/>
 
-                <TextView
-                    style="@style/textview16sp"
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:drawablePadding="5dp"
-                    android:drawableTop="@drawable/location_icon"
-                    android:gravity="center"
-                    android:text="GPS追踪"
-                    android:textColor="@color/purple"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_gravity="center"
+            <TextView
+                style="@style/textview16sp"
+                android:layout_width="0dp"
                 android:layout_weight="1"
-                android:gravity="center_vertical"
-                android:orientation="horizontal">
-
-                <TextView
-                    style="@style/textview16sp"
-                    android:layout_width="0dp"
-                     android:layout_weight="1"
-                    android:drawablePadding="5dp"
-                    android:drawableTop="@drawable/lock_screen_icon"
-                    android:gravity="center"
-                    android:text="远程锁屏"
-                    android:textColor="@color/purple"/>
-
-                <TextView
-                    style="@style/textview16sp"
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:drawablePadding="5dp"
-                    android:drawableTop="@drawable/delete_data"
-                    android:gravity="center"
-                    android:text="远程删除数据"
-                    android:textColor="@color/purple"/>
-            </LinearLayout>
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/location_icon"
+                android:gravity="center"
+                android:text="GSP追踪"
+                android:textColor="@color/purple"/>
         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/textview16sp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/lock_screen_icon"
+                android:gravity="center"
+                android:text="远程锁屏"
+                android:textColor="@color/purple"/>
+
+            <TextView
+                style="@style/textview16sp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/delete_data"
+                android:gravity="center"
+                android:text="远程删除数据"
+                android:textColor="@color/purple"/>
+        </LinearLayout>
+
     </LinearLayout>
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -108,4 +109,5 @@
 
         <include layout="@layout/setup_radiogroup"/>
     </LinearLayout>
+
 </LinearLayout>
