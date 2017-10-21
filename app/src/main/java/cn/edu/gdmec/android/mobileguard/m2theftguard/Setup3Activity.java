@@ -61,7 +61,7 @@ public class Setup3Activity extends BaseSetUpActivity implements View.OnClickLis
         super.onActivityResult(requestCode, resultCode, data);
         if (data!=null){
             String phone = data.getStringExtra("phone");
-
+            mInputPhone.setText(phone);
         }
     }
 

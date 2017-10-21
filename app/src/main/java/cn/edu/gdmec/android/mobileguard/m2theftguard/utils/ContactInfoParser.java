@@ -16,7 +16,7 @@ public class ContactInfoParser {
 
         ContentResolver resolver = context.getContentResolver();
 
-        Uri uri = Uri.parse("content://com.android.contact/raw_contacts");
+        Uri uri = Uri.parse("content://com.android.contacts/raw_contacts");
         Uri datauri = Uri.parse("content://com.android.contacts/data");
         List<ContactInfo> infos = new ArrayList<ContactInfo>();
         Cursor cursor = resolver.query(uri, new String[]{"contact_id"},
@@ -34,7 +34,7 @@ public class ContactInfoParser {
                         new String[]{id}, null);
                 while (dataCursor.moveToNext()) {
                     String data1 = dataCursor.getString(0);
-                    String mimetype = dataCursor.getString(0);
+                    String mimetype = dataCursor.getString(1);
                     if ("vnd.android.cursor.item/name".equals(mimetype)) {
                         System.out.println("姓名=" + data1);
                         info.name = data1;
