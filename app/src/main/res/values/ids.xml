@@ -4,4 +4,5 @@
     <item name="rb_second" type="id"/>
     <item name="rb_third" type="id"/>
     <item name="rb_four" type="id"/>
+    <item name="tv_phone" type="id"/>
 </resources>

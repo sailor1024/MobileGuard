@@ -27,6 +27,10 @@
     <!-- 手机防盗界面增加的 2017.10.10-->
 
     <!--高宽都包裹内容-->
+    <style name="textview14sp" parent="wrapcontent">
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
 
 
 </resources>
