@@ -28,7 +28,6 @@ public class ContactInfoParser {
                 ContactInfo info = new ContactInfo();
                 info.id = id;
 
-
                 Cursor dataCursor = resolver.query(datauri, new String[]{
                                 "data1", "mimetype"}, "raw_contact_id=?",
                         new String[]{id}, null);
