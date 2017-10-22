@@ -27,6 +27,7 @@ public class App extends Application {
             TelephonyManager tm = (TelephonyManager) getSystemService(Context.TELEPHONY_SERVICE);
 
             String realsim = tm.getSimSerialNumber();
+
             realsim = "999";
             if (bindsim.equals(realsim)) {
                 Log.i("", "sim卡未发生变化，还是您的手机");
