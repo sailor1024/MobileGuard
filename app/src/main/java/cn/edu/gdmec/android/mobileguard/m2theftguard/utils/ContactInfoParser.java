@@ -54,7 +54,6 @@ public class ContactInfoParser {
         return infos;
     }
 
-
    public static List<ContactInfo> getSimContacts(Context context) {
         Uri uri = Uri.parse("content://icc/adn");
         List<ContactInfo> infos = new ArrayList<ContactInfo>();
