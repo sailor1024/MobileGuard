@@ -14,7 +14,7 @@ public class Setup4Activity extends BaseSetUpActivity {
 
     private TextView mStatusTV;
     private ToggleButton mToggleButton;
-    private boolean isChecked;
+  //  private boolean isChecked;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +32,7 @@ public class Setup4Activity extends BaseSetUpActivity {
         mToggleButton = (ToggleButton)findViewById(R.id.togglebtn_securityfunction);
         mToggleButton.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
-            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+            public void onCheckedChanged(CompoundButton buttonView,boolean isChecked) {
                 if (isChecked){
                     mStatusTV.setText("防盗保护已经开启");
                 }else {
