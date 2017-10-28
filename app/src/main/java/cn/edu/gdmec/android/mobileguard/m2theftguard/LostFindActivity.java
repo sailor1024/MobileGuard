@@ -62,7 +62,7 @@ public class LostFindActivity extends AppCompatActivity implements View.OnClickL
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked) {
                 if (isChecked){
-                    mProtectStatusTV.setText("防盗保护没有开启");
+                    mProtectStatusTV.setText("防盗保护已经开启");
                 }else {
                     mProtectStatusTV.setText("防盗保护没有开启");
                 }
