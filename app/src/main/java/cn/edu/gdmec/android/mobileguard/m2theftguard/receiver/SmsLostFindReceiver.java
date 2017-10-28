@@ -48,23 +48,23 @@ public class SmsLostFindReceiver extends BroadcastReceiver {
                 String body = smsMessage.getEmailBody();
                 String safephone = sharePreferences.getString("safephone",null);
                 if (!TextUtils.isEmpty(safephone)& sender.equals(safephone)){
-                    if ("#*location".equals(body)){
+                    if ("#*location*#".equals(body)){
                         Log.i(TAG,"返回位置信息");
                         Intent service = new Intent(context,
                                 GPSLocationService.class);
                         context.startService(service);
                         abortBroadcast();
-                    }else if ("#*location".equals(body)){
+                    }else if ("#*alarm*#".equals(body)){
                         Log.i(TAG,"播放报警音乐.");
                         MediaPlayer player =MediaPlayer.create(context, R.raw.ylzs);
                         player.setVolume(1.0f, 1.0f);
                         player.start();
                         abortBroadcast();
-                    }else if ("#*location".equals(body)){
+                    }else if ("#*wipedata*#".equals(body)){
                         Log.i(TAG,"远程清除数据.");
                         dpm.wipeData(DevicePolicyManager.WIPE_EXTERNAL_STORAGE);
                         abortBroadcast();
-                    }else if ("#*location".equals(body)){
+                    }else if ("#*lockScreen*#".equals(body)){
                         Log.i(TAG,"远程锁屏.");
                         dpm.resetPassword("123456",0);
                         dpm.lockNow();
