@@ -73,7 +73,7 @@ public class BlackContactAdapter extends BaseAdapter{
             holder.mModeTV = (TextView) view
                     .findViewById(R.id.tv_black_mode);
             holder.mContactImgv = view
-                    .findViewById(R.id.view_blak_icon);
+                    .findViewById(R.id.view_black_icon);
             holder.mDeleteView = view
                     .findViewById(R.id.view_black_delete);
             view.setTag(holder);
