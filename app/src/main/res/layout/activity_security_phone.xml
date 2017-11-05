@@ -5,14 +5,17 @@
     android:layout_height="match_parent">
 
     <include layout="@layout/titlebar"/>
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="10">
+
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/fl_noblacknumber">
+
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">

@@ -1,5 +1,8 @@
-package cn.edu.gdmec.android.mobileguard.m3communicationguard.db.dao;
+package cn.edu.gdmec.android.mobileguard.m3communicationguard.db;
 
+/**
+ * Created by Administrator on 2017/11/5.
+ */
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
@@ -8,6 +11,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 public class BlackNumberOpenHelper extends SQLiteOpenHelper {
     private static String DB_NAME="my_info";
     private static int VERSION =1;
+
     private static BlackNumberOpenHelper instance=null;
     public static BlackNumberOpenHelper getInstance(Context context){
         if (instance==null){

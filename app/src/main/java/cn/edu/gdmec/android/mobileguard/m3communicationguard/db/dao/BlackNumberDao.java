@@ -1,5 +1,8 @@
 package cn.edu.gdmec.android.mobileguard.m3communicationguard.db.dao;
 
+/**
+ * Created by Administrator on 2017/11/5.
+ */
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -11,6 +14,7 @@ import android.util.Log;
 import java.util.ArrayList;
 import java.util.List;
 
+import cn.edu.gdmec.android.mobileguard.m3communicationguard.db.BlackNumberOpenHelper;
 import cn.edu.gdmec.android.mobileguard.m3communicationguard.entity.BlackContactInfo;
 
 public class BlackNumberDao {
@@ -129,10 +133,10 @@ public class BlackNumberDao {
                     .getInt(cursor.getColumnIndex("mode"));
 
         }
-            cursor.close();
-            db.close();
-            return mode;
-        }
+        cursor.close();
+        db.close();
+        return mode;
+    }
 
 
 

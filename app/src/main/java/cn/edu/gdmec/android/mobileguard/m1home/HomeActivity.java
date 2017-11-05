@@ -20,6 +20,7 @@ import cn.edu.gdmec.android.mobileguard.m2theftguard.dialog.InterPasswordDialog;
 import cn.edu.gdmec.android.mobileguard.m2theftguard.dialog.SetupPasswordDialog;
 import cn.edu.gdmec.android.mobileguard.m2theftguard.receiver.MyDeviceAdminReceiver;
 import cn.edu.gdmec.android.mobileguard.m2theftguard.utils.MD5Utils;
+import cn.edu.gdmec.android.mobileguard.m3communicationguard.SecurityPhoneActivity;
 
 
 public class HomeActivity extends AppCompatActivity {
@@ -48,18 +49,22 @@ public class HomeActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 System.out.print(i);
-                switch (i){
+                switch (i) {
                     case 0:
-                        if (isSetUpPassword()){
+                        if (isSetUpPassword()) {
 
                             showInterPswdDialog();
-                        }else{
+                        } else {
                             showSetUpPswDialog();
                         }
-                     break;
+                        break;
+                    case 1:
+                        startActivity(SecurityPhoneActivity.class);
+                        break;
                 }
             }
         });
+
         policyManager=(DevicePolicyManager) getSystemService(DEVICE_POLICY_SERVICE);
         componentName=new ComponentName(this, MyDeviceAdminReceiver.class);
         boolean active=policyManager.isAdminActive(componentName);
