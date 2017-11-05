@@ -58,9 +58,15 @@ public class HomeActivity extends AppCompatActivity {
                             showSetUpPswDialog();
                         }
                         break;
+                 //   case 1:
+                 //       startActivity(SecurityPhoneActivity.class);
+                 //       break;
+
                     case 1:
-                        startActivity(SecurityPhoneActivity.class);
-                        break;
+                        Intent intent = new Intent ( HomeActivity.this,SecurityPhoneActivity.class );
+                        startActivity ( intent );
+                        finish ();
+
                 }
             }
          } );
