@@ -63,7 +63,7 @@ public class HomeActivity extends AppCompatActivity {
                         break;
                 }
             }
-        });
+        } );
 
         policyManager=(DevicePolicyManager) getSystemService(DEVICE_POLICY_SERVICE);
         componentName=new ComponentName(this, MyDeviceAdminReceiver.class);
