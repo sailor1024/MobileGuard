@@ -35,7 +35,7 @@ public class InterceptSmsReciever extends BroadcastReceiver{
                 sender=sender.substring(3,sender.length());
             }
             int mode = dao.getBlackContactMode(sender);
-            Log.d("--------","onReceive:"+mode);
+            Log.d("-------","onReceive:"+mode);
             if (mode==2||mode==3){
                 //需要拦截短信 拦截广播
                 abortBroadcast();
