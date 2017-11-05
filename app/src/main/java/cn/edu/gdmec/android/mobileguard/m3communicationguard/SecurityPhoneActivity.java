@@ -141,8 +141,8 @@ public class SecurityPhoneActivity extends AppCompatActivity implements View.OnC
     }
 
     @Override
-    protected void onRestart() {
-        super.onRestart();
+    protected void onResume() {
+        super.onResume();
     //    if (totalNumber != dao.getTotalNumber()) {
             if (dao.getTotalNumber() > 0) {
                 mHaveBlackNumber.setVisibility(View.VISIBLE);
