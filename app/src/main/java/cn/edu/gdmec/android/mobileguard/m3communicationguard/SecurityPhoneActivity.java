@@ -99,7 +99,7 @@ public class SecurityPhoneActivity extends AppCompatActivity implements View.OnC
                             pagenumber++;
 
                             if (pagenumber * pagesize >= totalNumber) {
-                                Toast.makeText(SecurityPhoneActivity.this, "没有更多数据了", Toast.LENGTH_LONG).show();
+                                Toast.makeText(SecurityPhoneActivity.this, "没有更多的数据了", Toast.LENGTH_LONG).show();
                             } else {
                                 pageBlackNumber.addAll(dao.getPageBlackNumber(
                                         pagenumber, pagesize));
