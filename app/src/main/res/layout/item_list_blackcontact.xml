@@ -16,7 +16,7 @@
     <TextView
         android:id="@+id/tv_black_name"
         style="@style/textview14sp"
-        android:layout_marginTop="@id/view_black_icon"
+        android:layout_alignTop="@id/view_black_icon"
         android:layout_toRightOf="@id/view_black_icon"
         android:textColor="@color/purple"/>
     <TextView
