@@ -1,9 +1,10 @@
 package cn.edu.gdmec.android.mobileguard.m3communicationguard.entity;
 
-
+/**
+ * Created by admin on 2017/11/4.
+ */
 
 public class BlackContactInfo {
-
     public String phoneNumber;
     public String contactName;
     public int mode;
@@ -12,7 +13,7 @@ public class BlackContactInfo {
             case 1:
                 return "电话拦截";
             case 2:
-                return "短息拦截";
+                return "短信拦截";
             case 3:
                 return "电话、短信拦截";
         }

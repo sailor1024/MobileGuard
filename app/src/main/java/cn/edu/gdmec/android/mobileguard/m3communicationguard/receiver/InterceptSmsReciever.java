@@ -1,9 +1,5 @@
 package cn.edu.gdmec.android.mobileguard.m3communicationguard.receiver;
 
-/**
- * Created by 郑竣鸿 on 2017/11/2.
- */
-
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
@@ -13,16 +9,17 @@ import android.util.Log;
 
 import cn.edu.gdmec.android.mobileguard.m3communicationguard.db.dao.BlackNumberDao;
 
+/**
+ * Created by admin on 2017/11/4.
+ */
 
-public class InterceptSmsReciever extends BroadcastReceiver{
-
+public class InterceptSmsReciever extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
         SharedPreferences mSP=context.getSharedPreferences("config",
                 Context.MODE_PRIVATE);
         boolean BlackNumStatus = mSP.getBoolean("BlackNumStatus",true);
         if (!BlackNumStatus){
-            //黑名单拦截关闭
             return;
         }
         BlackNumberDao dao = new BlackNumberDao(context);

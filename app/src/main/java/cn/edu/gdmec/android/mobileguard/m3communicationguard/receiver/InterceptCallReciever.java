@@ -1,9 +1,5 @@
 package cn.edu.gdmec.android.mobileguard.m3communicationguard.receiver;
 
-/**
- * Created by Administrator on 2017/11/5.
- */
-
 import android.app.Service;
 import android.content.BroadcastReceiver;
 import android.content.ContentResolver;
@@ -24,11 +20,12 @@ import java.lang.reflect.Method;
 
 import cn.edu.gdmec.android.mobileguard.m3communicationguard.db.dao.BlackNumberDao;
 
+
 /**
- * Created by Swindler on 2017/10/30.
+ * Created by admin on 2017/11/4.
  */
 
-public class InterceptCallReciever extends BroadcastReceiver{
+public class InterceptCallReciever extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
         SharedPreferences mSP = context.getSharedPreferences("config",Context.MODE_PRIVATE);
