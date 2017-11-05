@@ -143,7 +143,7 @@ public class SecurityPhoneActivity extends AppCompatActivity implements View.OnC
     @Override
     protected void onRestart() {
         super.onRestart();
-        if (totalNumber != dao.getTotalNumber()) {
+    //    if (totalNumber != dao.getTotalNumber()) {
             if (dao.getTotalNumber() > 0) {
                 mHaveBlackNumber.setVisibility(View.VISIBLE);
                 mNoBlackNumber.setVisibility(View.GONE);
@@ -157,6 +157,6 @@ public class SecurityPhoneActivity extends AppCompatActivity implements View.OnC
             if (adapter != null) {
                 adapter.notifyDataSetChanged();
             }
-        }
+     //   }
     }
 }

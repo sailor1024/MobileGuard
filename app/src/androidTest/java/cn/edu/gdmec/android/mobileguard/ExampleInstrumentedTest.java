@@ -323,6 +323,7 @@ public class ExampleInstrumentedTest {
         result.clickAndWaitForNewWindow();
         result = mDevice.findObject(new UiSelector().textStartsWith("重新进入设置向导"));
 
+
         result.click();
         result = mDevice.findObject(new UiSelector().textStartsWith("手机防盗向导"));
         String str = result.getText();
