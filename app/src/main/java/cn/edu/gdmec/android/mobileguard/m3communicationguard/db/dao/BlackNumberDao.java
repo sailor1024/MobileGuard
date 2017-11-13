@@ -102,6 +102,7 @@ public class BlackNumberDao {
         int count=cursor.getInt(0);
         cursor.close();
         db.close();
+        
         return count;
     }
 }
