@@ -1,7 +1,7 @@
 package cn.edu.gdmec.android.mobileguard.m3communicationguard.entity;
 
 /**
- * Created by admin on 2017/11/4.
+ * Created by admin on 2017/11/2.
  */
 
 public class BlackContactInfo {
@@ -9,6 +9,7 @@ public class BlackContactInfo {
     public String contactName;
     public int mode;
     public String type;
+
     public String getModeString(int mode){
         switch (mode){
             case 1:
