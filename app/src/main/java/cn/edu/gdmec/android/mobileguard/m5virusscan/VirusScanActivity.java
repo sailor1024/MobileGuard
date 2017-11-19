@@ -53,7 +53,7 @@ public class VirusScanActivity extends AppCompatActivity implements View.OnClick
                     }
                     InputStream is = getAssets().open(dbname);
                     FileOutputStream fos = openFileOutput(dbname,MODE_PRIVATE);
-                    byte[] buffer = new byte[10240];
+                    byte[] buffer = new byte[1024];
                     int len=0;
                     while ((len = is.read(buffer))!=-1){
                         fos.write(buffer,0,len);
