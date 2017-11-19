@@ -38,7 +38,6 @@ import static android.content.Context.DOWNLOAD_SERVICE;
 
 //import java.util.logging.Handler;
 
-
 public class VersionUpdateUtils {
     //声明常量
     private static final int MESSAGE_IO_ERROR = 102;
