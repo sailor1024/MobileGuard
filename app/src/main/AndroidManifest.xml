@@ -26,7 +26,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".m1home.HomeActivity">
+        <!--<activity android:name=".m1home.HomeActivity">-->
+        <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
@@ -34,6 +35,7 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".m1home.HomeActivity" />
         <activity android:name=".m2theftguard.LostFindActivity"/>
         <!-- <activity android:name=".m2theftguard.BaseSetUpActivity" /> -->
         <activity android:name=".m2theftguard.Setup1Activity"/>
@@ -104,3 +106,4 @@
     </application>
 
 </manifest>
+

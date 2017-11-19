@@ -1,10 +1,12 @@
 package cn.edu.gdmec.android.mobileguard;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import android.widget.TextView;
 
+import cn.edu.gdmec.android.mobileguard.m1home.HomeActivity;
 import cn.edu.gdmec.android.mobileguard.m1home.utils.MyUtils;
 import cn.edu.gdmec.android.mobileguard.m1home.utils.VersionUpdateUtils;
 
@@ -22,7 +24,7 @@ public class SplashActivity extends AppCompatActivity {
         mTvVersion=(TextView) findViewById(R.id.tv_splash_version);
         mTvVersion.setText("版本是："+mVersion);
 
-        final VersionUpdateUtils versionUpdateUtils=new VersionUpdateUtils(mVersion,SplashActivity.this);
+        /*  final VersionUpdateUtils versionUpdateUtils=new VersionUpdateUtils(mVersion,SplashActivity.this);
 
         new Thread(){
             @Override
@@ -32,7 +34,9 @@ public class SplashActivity extends AppCompatActivity {
 
         }.start();
 
-
+*/
+        startActivity(new Intent(this, HomeActivity.class));
+        finish();
 
     }
 }

@@ -10,8 +10,8 @@ public class AntiVirusDao {
 
     private static Context context;
     private static String dbname;
-    private String md5;
-    private String desc;
+   // private String md5;
+   // private String desc;
 
     public AntiVirusDao(Context context){
         this.context = context;
@@ -40,7 +40,8 @@ public class AntiVirusDao {
                 dbname, null,
                 SQLiteDatabase.OPEN_READONLY);
 
-        Cursor cursor = db.rawQuery("select desc from datable wheremd=?",new String[] {md5});
+       // Cursor cursor = db.rawQuery("select desc from datable wheremd=?",new String[] {md5});  //修改 1118
+        Cursor cursor = db.rawQuery("select major||'.'||minor||'.'||build from version",null);
 
         if (cursor.moveToNext()) {
             dbVersion = cursor.getString(0);
@@ -50,6 +51,7 @@ public class AntiVirusDao {
 
 
         
-        return desc;
+      //  return desc; 修改 1118
+        return dbVersion;
     }
 }
