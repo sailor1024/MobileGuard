@@ -25,6 +25,7 @@ import cn.edu.gdmec.android.mobileguard.m4appmanager.AppManagerActivity;
 import cn.edu.gdmec.android.mobileguard.m5virusscan.VirusScanActivity;
 
 
+
 public class HomeActivity extends AppCompatActivity {
     private GridView gv_home;
     private long mExitTime;
