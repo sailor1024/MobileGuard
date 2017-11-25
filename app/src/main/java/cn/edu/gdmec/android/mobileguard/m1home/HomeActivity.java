@@ -73,7 +73,6 @@ public class HomeActivity extends AppCompatActivity {
                     case 4:
                         startActivity(CacheClearListActivity.class);
                         break;
-
                 //    case 1:
                 //        Intent intent = new Intent ( HomeActivity.this,SecurityPhoneActivity.class );
                 //        startActivity ( intent );
