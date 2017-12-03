@@ -24,7 +24,16 @@ public class SplashActivity extends AppCompatActivity {
         mTvVersion=(TextView) findViewById(R.id.tv_splash_version);
         mTvVersion.setText("版本是："+mVersion);
 
-        /*  final VersionUpdateUtils versionUpdateUtils=new VersionUpdateUtils(mVersion,SplashActivity.this);
+        VersionUpdateUtils.DownloadCallback downloadCallback = new VersionUpdateUtils.DownloadCallback() {
+            @Override
+            public void afterDownload(String filename) {
+                MyUtils.installApk(SplashActivity.this,filename);
+            }
+        };
+        final VersionUpdateUtils versionUpdateUtils = new VersionUpdateUtils(mVersion,SplashActivity.this,downloadCallback,HomeActivity.class);
+//
+//
+/*  final VersionUpdateUtils versionUpdateUtils=new VersionUpdateUtils(mVersion,SplashActivity.this);
 
         new Thread(){
             @Override
