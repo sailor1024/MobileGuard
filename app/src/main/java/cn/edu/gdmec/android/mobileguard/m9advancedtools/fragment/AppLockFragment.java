@@ -1,5 +1,6 @@
 package cn.edu.gdmec.android.mobileguard.m9advancedtools.fragment;
 
+import android.content.Context;
 import android.database.ContentObserver;
 import android.net.Uri;
 import android.os.Bundle;
@@ -18,6 +19,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 
+import cn.edu.gdmec.android.mobileguard.App;
 import cn.edu.gdmec.android.mobileguard.R;
 import cn.edu.gdmec.android.mobileguard.m9advancedtools.utils.AppInfoParser;
 import cn.edu.gdmec.android.mobileguard.m9advancedtools.adapter.AppLockAdapter;
@@ -28,12 +30,16 @@ import cn.edu.gdmec.android.mobileguard.m9advancedtools.entity.AppInfo;
 
 public class AppLockFragment extends Fragment {
 
+    private Context context;
+
     private TextView mLockTV;
     private ListView mLockLV;
     private AppLockDao dao;
     List<AppInfo> mLockApps = new ArrayList<AppInfo> ();
     private AppLockAdapter adapter;
-    private Uri uri = Uri.parse("content://cn.edu.gdmec.android.mobileguard.applock");
+   // private Uri uri = Uri.parse("content://cn.edu.gdmec.android.mobileguard.applock");
+   private Uri uri = Uri.parse(App.APPLOCK_CONTENT_URI);
+
     private Handler mHandler = new Handler(){
         public void handleMessage(Message msg) {
             switch (msg.what) {
@@ -52,6 +58,13 @@ public class AppLockFragment extends Fragment {
         };
     };
     private List<AppInfo> appInfos;
+
+    @Override
+     public void onAttach(Context context){
+                super.onAttach(context);
+               this.context=context;
+            }
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -100,7 +113,8 @@ public class AppLockFragment extends Fragment {
         mLockLV.setOnItemClickListener(new AdapterView.OnItemClickListener () {
 
             @Override
-            public void onItemClick(AdapterView<?> parent, View view,
+          //  public void onItemClick(AdapterView<?> parent, View view,
+            public void onItemClick(AdapterView<?> adapterView, View view,
                                     final int position, long id) {
                 //播放一个动画效果
                 TranslateAnimation ta = new TranslateAnimation( Animation.RELATIVE_TO_SELF, 0, Animation.RELATIVE_TO_SELF, -1.0f,

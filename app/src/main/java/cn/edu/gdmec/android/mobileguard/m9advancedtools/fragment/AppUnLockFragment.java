@@ -18,6 +18,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 
+import cn.edu.gdmec.android.mobileguard.App;
 import cn.edu.gdmec.android.mobileguard.R;
 import cn.edu.gdmec.android.mobileguard.m9advancedtools.utils.AppInfoParser;
 import cn.edu.gdmec.android.mobileguard.m9advancedtools.adapter.AppLockAdapter;
@@ -32,10 +33,12 @@ public class AppUnLockFragment extends Fragment {
     List<AppInfo> unlockApps = new ArrayList<AppInfo> ();
     private AppLockAdapter adapter;
     private AppLockDao dao;
-    private Uri uri = Uri.parse("content://cn.edu.gdmec.android.mobileguard.applock");
+   // private Uri uri = Uri.parse("content://cn.edu.gdmec.android.mobileguard.applock");
+   private Uri uri = Uri.parse(App.APPLOCK_CONTENT_URI);
     private List<AppInfo> appInfos;
     private Handler mhandler = new Handler(){
-        public void handleMessage(Message msg) {
+       // public void handleMessage(Message msg) {
+       public void handleMessage(android.os.Message msg) {
             switch (msg.what) {
                 case 100:
                     unlockApps.clear();

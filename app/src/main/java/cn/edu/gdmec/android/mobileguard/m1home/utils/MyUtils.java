@@ -31,7 +31,15 @@ public class MyUtils {
      * 安装新版本
      * @param activity
      */
-    public static void installApk(Activity activity, String apkFile){
+
+    public static void installApk(Activity activity,String apkFile){
+                Intent intent=new Intent(Intent.ACTION_VIEW);
+                intent.addCategory(Intent.CATEGORY_DEFAULT);
+                intent.setDataAndType(Uri.fromFile(new File(Environment.getExternalStoragePublicDirectory("/download/").getPath()+"/"+apkFile)),"application/vnd.android.package-archive");
+                activity.startActivityForResult(intent,0);
+            }
+
+    /*public static void installApk(Activity activity, String apkFile){
         Intent intent = new Intent(Intent.ACTION_VIEW);
         intent.addCategory(Intent.CATEGORY_DEFAULT);
         intent.setDataAndType(Uri.fromFile(
@@ -39,5 +47,5 @@ public class MyUtils {
                 "application/vnd.android.package-archive");
         activity.startActivityForResult(intent,0);
     }
-
+*/
 }
