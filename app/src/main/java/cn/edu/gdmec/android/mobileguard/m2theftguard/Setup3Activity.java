@@ -10,6 +10,7 @@ import android.widget.RadioButton;
 import android.widget.Toast;
 
 import cn.edu.gdmec.android.mobileguard.R;
+
 public class Setup3Activity extends BaseSetUpActivity implements View.OnClickListener{
     private EditText mInputPhone;
     @Override

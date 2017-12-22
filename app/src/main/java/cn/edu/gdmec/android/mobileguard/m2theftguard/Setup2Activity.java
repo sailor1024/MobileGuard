@@ -2,7 +2,6 @@ package cn.edu.gdmec.android.mobileguard.m2theftguard;
 
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.telecom.TelecomManager;
 import android.telephony.TelephonyManager;
 import android.text.TextUtils;
 import android.view.View;
@@ -11,6 +10,7 @@ import android.widget.RadioButton;
 import android.widget.Toast;
 
 import cn.edu.gdmec.android.mobileguard.R;
+
 public class Setup2Activity extends BaseSetUpActivity implements View.OnClickListener{
     private TelephonyManager mTelephonyManager;
     private Button mBindSIMBtn;

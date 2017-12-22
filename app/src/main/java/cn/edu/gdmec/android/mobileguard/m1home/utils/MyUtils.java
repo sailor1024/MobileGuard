@@ -11,35 +11,30 @@ import android.os.Environment;
 import java.io.File;
 
 /**
- * Created by Administrator on 2017/9/22.
+ * Created by apple on 2017/9/5.
  */
 
 public class MyUtils {
-    public  static String getVersion(Context context){
-        PackageManager packageManager=context.getPackageManager();
+    /**
+     * 获取版本号
+     * @param context
+     * @return 返回版本号
+     */
+    public static String getVersion(Context context){
+        PackageManager packageManager = context.getPackageManager();
         try {
-            PackageInfo packageInfo=packageManager.getPackageInfo(context.getPackageName(),0);
-            return  packageInfo.versionName;
-
+            PackageInfo packageInfo = packageManager.getPackageInfo(context.getPackageName(),0);
+            return packageInfo.versionName;
         } catch (PackageManager.NameNotFoundException e) {
             e.printStackTrace();
-            return  "";
+            return "";
         }
     }
-
     /**
      * 安装新版本
      * @param activity
      */
-
     public static void installApk(Activity activity,String apkFile){
-                Intent intent=new Intent(Intent.ACTION_VIEW);
-                intent.addCategory(Intent.CATEGORY_DEFAULT);
-                intent.setDataAndType(Uri.fromFile(new File(Environment.getExternalStoragePublicDirectory("/download/").getPath()+"/"+apkFile)),"application/vnd.android.package-archive");
-                activity.startActivityForResult(intent,0);
-            }
-
-    /*public static void installApk(Activity activity, String apkFile){
         Intent intent = new Intent(Intent.ACTION_VIEW);
         intent.addCategory(Intent.CATEGORY_DEFAULT);
         intent.setDataAndType(Uri.fromFile(
@@ -47,5 +42,5 @@ public class MyUtils {
                 "application/vnd.android.package-archive");
         activity.startActivityForResult(intent,0);
     }
-*/
+
 }

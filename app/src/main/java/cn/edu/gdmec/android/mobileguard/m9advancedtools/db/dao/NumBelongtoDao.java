@@ -5,25 +5,29 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.text.TextUtils;
 
-
-
 public class NumBelongtoDao {
-
-  //  public static String getLocation(String phonenumber) {
-     public static String getLocation(Context context, String phonenumber) {
+    /**
+     * 返回电话号码的归属地
+     *
+     * @param phonenumber
+     *            电话号码
+     * @return 归属地
+     */
+    public static String getLocation(Context context, String phonenumber) {
 
         String location = phonenumber;
-
-         String dbname=context.getFilesDir()+"/address.db";
-         System.out.println(dbname);
-
-        SQLiteDatabase db = SQLiteDatabase.openDatabase(
-                //"/data/data/cn.edu.gdmec.android.mobileguard/files/address.db", null,
-                dbname, null,
+        // 130 131 132 133 134 135 136 137 137 139
+        // 15x
+        // 14x
+        // 18x
+        // 17x
+        // 长度是11位
+        // ^1[34578]\d{9}$
+        // path 数据库文件的路径
+        String dbname = context.getFilesDir()+ "/address.db";
+        System.out.println(dbname);
+        SQLiteDatabase db = SQLiteDatabase.openDatabase(dbname, null,
                 SQLiteDatabase.OPEN_READONLY);
-      /*String dbname = context.getFilesDir()+"/address.db";
-        System.out.println (dbname);
-        SQLiteDatabase db = SQLiteDatabase.openDatabase ( dbname, null, SQLiteDatabase.OPEN_READONLY );*/
 
         if (phonenumber.matches("^1[34578]\\d{9}$")) {
             // 手机号码的查询
@@ -62,13 +66,15 @@ public class NumBelongtoDao {
                     if(location.length()>=9&& location.startsWith("0")){
                         String address = null;
                         //select location from data2 where area = '10'
-                        Cursor cursor = db.rawQuery("select location from data2 where area = ?", new String[]{location.substring(1, 3)});
+                        Cursor cursor = db.rawQuery("select location from data2 where area = ?",
+                                new String[]{location.substring(1, 3)});
                         if(cursor.moveToNext()){
                             String str = cursor.getString(0);
                             address = str.substring(0, str.length()-2);
                         }
                         cursor.close();
-                        cursor = db.rawQuery("select location from data2 where area = ?", new String[]{location.substring(1, 4)});
+                        cursor = db.rawQuery("select location from data2 where area = ?",
+                                new String[]{location.substring(1, 4)});
                         if(cursor.moveToNext()){
                             String str = cursor.getString(0);
                             address = str.substring(0, str.length()-2);

@@ -18,8 +18,6 @@ import cn.edu.gdmec.android.mobileguard.m2theftguard.adapter.ContactAdapter;
 import cn.edu.gdmec.android.mobileguard.m2theftguard.entity.ContactInfo;
 import cn.edu.gdmec.android.mobileguard.m2theftguard.utils.ContactInfoParser;
 
-import static android.R.attr.name;
-
 public class ContactSelectActivity extends AppCompatActivity implements View.OnClickListener{
     private ListView mListView;
     private ContactAdapter adapter;

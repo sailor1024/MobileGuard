@@ -11,11 +11,8 @@ public class BootCompleteReceiver extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context context, Intent intent) {
-        // TODO: This method is called when the BroadcastReceiver is receiving
-        // an Intent broadcast.
-        //throw new UnsupportedOperationException("Not yet implemented");
         ((App)(context.getApplicationContext())).correctSIM();
-        context.startService(new Intent(context, AppLockService.class));
+        //启动程序锁服务。
+        context.startService(new Intent(context,AppLockService.class));
     }
 }
-
