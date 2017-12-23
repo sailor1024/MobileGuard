@@ -24,10 +24,13 @@ public class NumBelongtoDao {
         // 长度是11位
         // ^1[34578]\d{9}$
         // path 数据库文件的路径
-        String dbname = context.getFilesDir()+ "/address.db";
+        SQLiteDatabase db = SQLiteDatabase.openDatabase(
+                "/data/data/cn.edu.gdmec.android.mobileguard/files/address.db", null,
+                SQLiteDatabase.OPEN_READONLY);
+        /*String dbname = context.getFilesDir()+ "/address.db";
         System.out.println(dbname);
         SQLiteDatabase db = SQLiteDatabase.openDatabase(dbname, null,
-                SQLiteDatabase.OPEN_READONLY);
+                SQLiteDatabase.OPEN_READONLY);*/
 
         if (phonenumber.matches("^1[34578]\\d{9}$")) {
             // 手机号码的查询

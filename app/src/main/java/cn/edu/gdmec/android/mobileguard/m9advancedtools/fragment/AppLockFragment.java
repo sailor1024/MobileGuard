@@ -1,8 +1,6 @@
 package cn.edu.gdmec.android.mobileguard.m9advancedtools.fragment;
 
-import android.content.ComponentName;
 import android.content.Context;
-import android.content.Intent;
 import android.database.ContentObserver;
 import android.net.Uri;
 import android.os.Bundle;
@@ -16,21 +14,17 @@ import android.view.animation.Animation;
 import android.view.animation.TranslateAnimation;
 import android.widget.AdapterView;
 import android.widget.CheckBox;
-import android.widget.CompoundButton;
 import android.widget.ListView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import cn.edu.gdmec.android.mobileguard.App;
 import cn.edu.gdmec.android.mobileguard.R;
 import cn.edu.gdmec.android.mobileguard.m4appmanager.entity.AppInfo;
 import cn.edu.gdmec.android.mobileguard.m4appmanager.utils.AppInfoParser;
-import cn.edu.gdmec.android.mobileguard.m8trafficmonitor.utils.SystemInfoUtils;
 import cn.edu.gdmec.android.mobileguard.m9advancedtools.adapter.AppLockAdapter;
 import cn.edu.gdmec.android.mobileguard.m9advancedtools.db.dao.AppLockDao;
-import cn.edu.gdmec.android.mobileguard.m9advancedtools.service.AppLockService;
 
 public class AppLockFragment extends Fragment {
     private Context context;
@@ -40,7 +34,8 @@ public class AppLockFragment extends Fragment {
     private AppLockDao dao;
     List<AppInfo> mLockApps = new ArrayList<AppInfo>();
     private AppLockAdapter adapter;
-    private Uri uri = Uri.parse(App.APPLOCK_CONTENT_URI);
+    //private Uri uri = Uri.parse(App.APPLOCK_CONTENT_URI);
+    private Uri uri = Uri.parse("content://cn.edu.gdmec.android.mobileguard.m9advancedtools.applock");
     private Handler mHandler = new Handler(){
         public void handleMessage(Message msg) {
             switch (msg.what) {
@@ -71,7 +66,7 @@ public class AppLockFragment extends Fragment {
         View view =  inflater.inflate(R.layout.fragment_app_lock, null);
         mLockTV = (TextView) view.findViewById(R.id.tv_lock);
         mLockLV = (ListView) view.findViewById(R.id.lv_lock);
-        mLockCB = (CheckBox) view.findViewById(R.id.cb_applock_service);
+       /* mLockCB = (CheckBox) view.findViewById(R.id.cb_applock_service);
         boolean running = SystemInfoUtils.isServiceRunning(context, "cn.edu.gdmec.t00385.android2016.myguard.m9advancedtools.service.AppLockService");
         mLockCB.setChecked(running);
         mLockCB.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
@@ -91,7 +86,7 @@ public class AppLockFragment extends Fragment {
                 }
 
             }
-        });
+        });*/
         return view;
     }
 
