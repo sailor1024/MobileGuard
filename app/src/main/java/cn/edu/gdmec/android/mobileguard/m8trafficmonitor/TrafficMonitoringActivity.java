@@ -157,10 +157,10 @@ public class TrafficMonitoringActivity extends AppCompatActivity implements View
                         // 获取系统默认的短信管理器
                         smsManager.sendTextMessage("10086", null, "CXLL", null, null);
                         break;
-                   /* case 2:
+                    case 2:
                         // 中国联通
                         smsManager.sendTextMessage("10010", null, "CXLL", null, null);
-                        break;*/
+                        break;
                     case 3:
                         // 中国电信
                         break;
