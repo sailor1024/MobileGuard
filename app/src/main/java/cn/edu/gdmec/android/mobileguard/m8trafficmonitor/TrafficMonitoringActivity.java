@@ -168,6 +168,7 @@ public class TrafficMonitoringActivity extends AppCompatActivity implements View
         }
     }
 
+
     class CorrectFlowReceiver extends BroadcastReceiver {
         @Override
         public void onReceive(Context context, Intent intent) {
